@@ -1,0 +1,17 @@
+# gradle
+
+.gradle/
+build/
+out/
+classes/
+
+# idea
+
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# project
+
+/src/main/java/dev/xpple/serverconsents/FriendlyByteBuf.java

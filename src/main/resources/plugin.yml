@@ -1,0 +1,6 @@
+name: ServerConsents
+version: '${version}'
+main: dev.xpple.serverconsents.ServerConsents
+api-version: '1.20'
+load: STARTUP
+authors: [xpple]
