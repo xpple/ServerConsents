@@ -1,4 +1,4 @@
-## Server Consent for Clients
+# Server Consent for Clients
 
 _Perhaps a different name would be better._
 
@@ -18,9 +18,9 @@ Goals
 -----
 
 - Standardise a system for client mod developers wanting their mod to be
-used responsibly. This is the main goal!
+  used responsibly. This is the main goal!
 - Provide server owners with a system that can _ask_ the client to
-disable some of its mods or some of its mods' functionalities.
+  disable some of its mods or some of its mods' functionalities.
 
 Non-Goals
 ---------
@@ -88,10 +88,31 @@ information.
 Alternatives
 ------------
 
-Alternatively, this system could not be standardised. In that case a
-plugin (in the case of a Paper server) like this one could be used by
-server owners. However, there is very little chance a third party plugin
-will be widely adopted by servers. Importantly, standardisation is the
-main goal of this system. Without it, disagreement and inconsistency
-would arise, and the system would flop. Only if established server
-software providers choose to adopt this system will this work.
+- The system is standardised by server software providers, but not
+  implemented into them directly. This means that different server
+  software providers would agree on a namespace for the list of
+  illegal mods/features, but let the configuration and implementation
+  be up to server owners to implement. One way this could be
+  achieved is by having server software providers document the
+  system clearly, with example code for server owners. There are two
+  downsides of this approach, though.
+
+    1. The documentation will likely not reach the same audience as
+       direct implementation would. That means fewer server owners
+       will implement use system, which weakens the system as whole.
+    2. It is at the expense of standardisation. Direct implementation
+       simply has more of a standardising effect than individual
+       standardisation has.
+
+- This system is not standardised at all. In that case a plugin (in the
+  case of a Paper server) like this one could be used by server owners.
+  However, there is very little chance a third party plugin will be widely
+  adopted by servers. Importantly, standardisation is the main goal of
+  this system. Without it, disagreement and inconsistency would arise,
+  and the system would flop. Only if established server software
+  providers choose to adopt this system will this work.
+
+Considering these two alternatives, only the first could actually work.
+Third party implementations just don't have the necessary reach to
+establish something widespread across the Minecraft developer
+community.
